@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Syllabus - Foundation of Computer and Programming</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        
+        
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h2 {
+            color: #003366;  /* Dark blue heading */
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .syllabus-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .syllabus-box {
+            background-color: #ffffff;  /* White boxes */
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            min-width: 300px;
+            transition: transform 0.3s;
+        }
+        
+        .syllabus-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        li {
+            font-size: 1.4rem;
+            margin-bottom: 1.2rem;
+            padding: 0.8rem;
+            border-left: 3px solid #003366;  /* Dark blue accent */
+            background-color: rgba(0, 51, 102, 0.05);
+            transition: background-color 0.3s;
+            color: #000000;  /* Black text */
+        }
+        
+        li:hover {
+            background-color: rgba(0, 51, 102, 0.1);
+        }
+        
+        p {
+            font-size: 1.3rem;
+            text-align: center;
+            color: #333333;  /* Dark gray for paragraph */
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            
+            .syllabus-container {
+                flex-direction: column;
+            }
+            
+            li {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="not-head">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="syllabuss.html">Syllabus</a>
+          <a href="resources.html">Resources</a>
+          <a> projects </a>
+        </nav>
+    </header>
+    <main>
+        <h2>Course Syllabus</h2>
+        
+        <div class="syllabus-container">
+            <div class="syllabus-box">
+                <ul>
+                    <li>Introduction to Computers and Programming</li>
+                    <li>Number Systems and Data Representation</li>
+                    <li>Algorithms and Flowcharts</li>
+                </ul>
+            </div>
+            
+            <div class="syllabus-box">
+                <ul>
+                    <li>Programming Basics (Variables, Data Types, Operators)</li>
+                    <li>Control Structures (Conditionals, Loops)</li>
+                    <li>Functions and Modular Programming</li>
+                </ul>
+            </div>
+            
+            <div class="syllabus-box">
+                <ul>
+                    <li>Arrays and Data Structures</li>
+                    <li>Introduction to Object-Oriented Programming</li>
+                    <li>Course Project and Final Exam</li>
+                </ul>
+            </div>
+        </div>
+        
+        <p>For a detailed syllabus, please contact the instructor or check the course LMS.</p>
+    </main>
+</body>
+</html>

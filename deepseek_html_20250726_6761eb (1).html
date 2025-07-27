@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation of Computer and Programming</title>
+    <style>
+        :root {
+            --navy: #0a1f44;
+            --royal-blue: #2a4d8e;
+            --sky-blue: #e6f0ff;
+            --accent-gold: #d4af37;
+            --accent-slate: #6e7f90;
+        }
+        
+        body {
+            background-color: var(--sky-blue);
+            color: var(--navy);
+            font-family: 'Georgia', 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+        }
+        
+        header {
+            background-color: var(--navy);
+            padding: 1.8rem 0;
+            box-shadow: 0 4px 12px rgba(10, 31, 68, 0.15);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            padding: 0.5rem 0;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: var(--accent-gold);
+        }
+        
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--accent-gold);
+            transition: width 0.3s ease;
+        }
+        
+        nav a:hover::after {
+            width: 100%;
+        }
+        
+        .centered-title {
+            text-align: center;
+            margin: 4rem 0 3rem;
+            padding: 0 2rem;
+        }
+        
+        .h {
+            font-size: 2.8rem;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            margin-bottom: 0.8rem;
+            line-height: 1.3;
+        }
+        
+        .title-word {
+            display: inline-block;
+            transition: transform 0.3s;
+        }
+        
+        .title-word:hover {
+            transform: translateY(-3px);
+        }
+        
+        .word1 { color: var(--navy); }
+        .word2 { color: var(--royal-blue); }
+        .word3 { color: var(--accent-slate); }
+        .word4 { color: var(--navy); font-weight: 700; }
+        
+        h3 {
+            font-size: 1.6rem;
+            color: var(--royal-blue);
+            margin-top: 0;
+            font-weight: 400;
+            font-style: italic;
+        }
+        
+        main {
+            padding: 0 2rem 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .main-content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5rem;
+            margin-top: 2rem;
+        }
+        
+        .main-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .welcome {
+            font-size: 2.2rem;
+            margin-bottom: 2.5rem;
+            color: var(--navy);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .welcome::after {
+            content: '';
+            position: absolute;
+            width: 60%;
+            height: 3px;
+            bottom: -8px;
+            left: 0;
+            background: linear-gradient(to right, var(--accent-gold), transparent);
+        }
+        
+        p {
+            font-size: 1.2rem;
+            line-height: 1.9;
+            margin-bottom: 2rem;
+            color: var(--navy);
+        }
+        
+        .highlight {
+            color: var(--royal-blue);
+            font-weight: 600;
+        }
+        
+        .main-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+        
+        .main-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 8px 24px rgba(10, 31, 68, 0.15);
+            border: 1px solid rgba(10, 31, 68, 0.1);
+        }
+        
+        .dept-row {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+        
+        .dept-logo {
+            width: 60px;
+            height: auto;
+            opacity: 0.9;
+        }
+        
+        h6 {
+            font-size: 1.1rem;
+            color: var(--accent-slate);
+            margin: 0;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+        
+        @media (max-width: 768px) {
+            nav {
+                gap: 1.5rem;
+                flex-wrap: wrap;
+            }
+            
+            .h {
+                font-size: 2.2rem;
+            }
+            
+            h3 {
+                font-size: 1.3rem;
+            }
+            
+            .main-content-wrapper {
+                gap: 3rem;
+            }
+            
+            .welcome {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="syllabus.html">Syllabus</a>
+        <a href="resources.html">Resources</a>
+        <a>Projects</a>
+      </nav>
+    </header>
+    <div class="centered-title">
+      <h1 class="h">
+        <span class="title-word word1">Foundation</span> 
+        <span class="title-word word2">of</span> 
+        <span class="title-word word3">Computer</span> 
+        <span class="title-word word4">and</span> 
+        <span class="title-word word1">Programming</span>
+      </h1>
+      <h3>Shiraz University</h3>
+    </div>
+    <main>
+      <div class="main-content-wrapper">
+        <div class="main-text">
+          <h2 class="welcome">Welcome</h2>
+          <p>Welcome to the course page for <span class="highlight">Foundations of Computer and Programming</span>. This course introduces students to the fundamental concepts of computing, algorithmic thinking, and programming principles.</p>
+
+          <p>Designed for students across mathematics, computer science, and related disciplines, this course provides the essential toolkit for computational problem-solving. You'll develop not just programming skills, but the analytical mindset characteristic of computer scientists.</p>
+          
+          <div class="dept-row">
+            <img src="./dd.jpg" alt="Shiraz University Logo" class="dept-logo" />
+            <h6>Mathematics and Computer Science Department</h6>
+          </div>
+        </div>
+        <div class="main-image">
+          <img src="./ww.png" alt="Workshop Coding" />
+        </div>
+      </div>
+    </main>
+</body>
+</html>
